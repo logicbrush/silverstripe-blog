@@ -138,7 +138,7 @@ class BlogEntry extends Page {
 	 * To be used by RSSFeed. If RSSFeed uses Content field, it doesn't pull in correctly parsed content. 
 	 */ 
 	function RSSContent() {
-		return DBField::create_field('HTMLText', $this->Content());
+		return $this->Content();
 	}
 	
 	/**
